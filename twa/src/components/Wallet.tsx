@@ -66,7 +66,7 @@ export function Wallet(props: WalletProps) {
 
   return (
     <>
-      <Card mx={10} p="lg" style={{ backgroundColor: 'transparent' }}>
+      <Card p="lg" style={{ backgroundColor: 'transparent' }}>
         {isSendOpen ? (
           <Send
             isDarkTheme={props.isDarkTheme}
@@ -76,19 +76,11 @@ export function Wallet(props: WalletProps) {
         ) : (
           <>
             <TonConnectButton style={{ marginLeft: 'auto' }} />
-            <Text
-              size="35px"
-              mb={10}
-              style={{ ...textStyle, textAlign: 'center' }}
-            >
-              Coin Together
-            </Text>
-            <Divider style={{ margin: '20px 0' }} />
 
             <Group justify="space-between" mt={10} mx={10}>
               <Group mb={10}>
                 <Text size="20px" style={{ ...textStyle }}>
-                  Tom & Ben Acc:
+                  Tom & Ben:
                 </Text>
                 <Text
                   mr={-5}
@@ -99,7 +91,7 @@ export function Wallet(props: WalletProps) {
                 </Text>
                 <CopyButtonIcon address={contractAddress} />
               </Group>
-              <Box mb={5}>
+              {/* <Box mb={5}>
                 {props.isDarkTheme ? (
                   <IconSun
                     style={{ color: 'white' }}
@@ -115,7 +107,7 @@ export function Wallet(props: WalletProps) {
                     }}
                   />
                 )}
-              </Box>
+              </Box> */}
             </Group>
             <Text
               ml={20}
@@ -134,7 +126,7 @@ export function Wallet(props: WalletProps) {
             </Stack>
 
             {/* Action Buttons */}
-            <Group grow my={15} mx={20} gap={30}>
+            <Group grow gap={8}>
               <Button
                 variant="filled"
                 leftSection={
