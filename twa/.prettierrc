@@ -1,0 +1,23 @@
+{
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "trailingComma": "none",
+  "overrides": [
+    {
+      "files": ["**/*.html"],
+      "options": {
+        "singleQuote": false,
+        "printWidth": 140
+      }
+    },
+    {
+      "files": ["**/*.ts"],
+      "options": {
+        "printWidth": 140
+      }
+    }
+  ]
+}
