@@ -103,7 +103,7 @@ export function Send(props: SendProps) {
           <TextInput
             className="inputClass"
             placeholder="UqBs..."
-            w={400}
+            style={{ width: '90vw' }}
             h={50}
             description={
               <div
@@ -123,7 +123,7 @@ export function Send(props: SendProps) {
           <TextInput
             className="inputClass"
             placeholder="0.01"
-            w={400}
+            style={{ width: '90vw' }}
             h={50}
             description={
               <div
@@ -143,37 +143,20 @@ export function Send(props: SendProps) {
           />
         </Stack>
       </Stack>
-      <Center
-        style={{
-          width: 'auto',
-          marginBottom: '50px',
-          bottom: '0px',
-          position: 'fixed',
-          left: 0,
-          right: 0
+
+      <Button
+        size="20px"
+        loading={loading}
+        disabled={loading}
+        w={'80wv'}
+        h={'50px'}
+        style={{ color: 'white' }}
+        onClick={() => {
+          sendToken(props.provider, recepient, sendAmount);
         }}
       >
-        <Button
-          size="20px"
-          loading={loading}
-          disabled={loading}
-          w={'80%'}
-          h={'50px'}
-          style={{ color: 'white' }}
-          onClick={() => {
-            //   setErrorMessage('');
-            //   if (selectedToken && recepient && sendAmount) {
-            //     setLoading(true);
-            //     handleConfirm();
-            //   } else {
-            //     setErrorMessage('Inputs not defined');
-            //   }
-            sendToken(props.provider, recepient, sendAmount);
-          }}
-        >
-          Confirm
-        </Button>
-      </Center>
+        Confirm
+      </Button>
     </>
   );
 }

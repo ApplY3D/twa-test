@@ -40,7 +40,7 @@ export const useSendToken = () => {
       to: Address.parse(recipient),
       body: beginCell().endCell(),
       value: toNano(amount),
-      bounce: true,
+      bounce: false,
       mode: BigInt(SendMode.PAY_GAS_SEPARATELY),
       code: null,
       data: null
