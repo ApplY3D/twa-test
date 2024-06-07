@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`contract should deploy correctly 1`] = `
+[
+  {
+    "$seq": 1,
+    "events": [
+      {
+        "$type": "storage-charged",
+        "amount": "0.000000007",
+      },
+      {
+        "$type": "received",
+        "message": {
+          "body": {
+            "cell": "x{C1252ABEA9AAEFC4991BF19FDC5195F4816F8B7778CEECDF88255D03ECE2086EC6F08EA264C13CA644F4B94D838A27537A9227F5B1DCBFF723F4EECE502A3A4EB672A60B000000006660AD46}
+ x{C002483CBCA53D072C89FB2BD8C2CC471AB55F00936FD9D7C95DA2471BB40C308640000000000000000000000000000000000000000000000000000000002FAF080000000000000000000000000000000000000000000000000000000000000000064_}
+  x{0000000048656C6C6F2043726561746F7221}",
+            "type": "cell",
+          },
+          "to": "kQAOHdpm6as-dS__crnYXwEmdeMoWyyP9sTqnz9xJ2Ol7CVN",
+          "type": "external-in",
+        },
+      },
+      {
+        "$type": "processed",
+        "gasUsed": 11084n,
+      },
+      {
+        "$type": "sent",
+        "messages": [
+          {
+            "body": {
+              "text": "Hello Creator!",
+              "type": "text",
+            },
+            "bounce": true,
+            "from": "kQAOHdpm6as-dS__crnYXwEmdeMoWyyP9sTqnz9xJ2Ol7CVN",
+            "to": "@treasure(creator)",
+            "type": "internal",
+            "value": "0.1",
+          },
+        ],
+      },
+    ],
+  },
+]
+`;
+
+exports[`contract should deploy correctly 2`] = `
+[
+  {
+    "$seq": 1,
+    "events": [
+      {
+        "$type": "storage-charged",
+        "amount": "0.000000007",
+      },
+      {
+        "$type": "received",
+        "message": {
+          "body": {
+            "cell": "x{C1252ABE1A57B02ECA3B6312E38BC406469F2EA3876FBBC0DB8304D768F4068AB0623E559F0347C88E10C7B63770DBEDB7CC700EB83F47E2738450A2C3980E0CD406A009000000006660AD47}
+ x{C002483CBCA53D072C89FB2BD8C2CC471AB55F00936FD9D7C95DA2471BB40C308640000000000000000000000000000000000000000000000000000000002FAF080000000000000000000000000000000000000000000000000000000000000000064_}
+  x{0000000048656C6C6F2043726561746F7221}",
+            "type": "cell",
+          },
+          "to": "kQClyqc82bVvuchsinNlgw1XCNfskqRrZksVYe2ViXcoT02O",
+          "type": "external-in",
+        },
+      },
+      {
+        "$type": "processed",
+        "gasUsed": 11084n,
+      },
+      {
+        "$type": "sent",
+        "messages": [
+          {
+            "body": {
+              "text": "Hello Creator!",
+              "type": "text",
+            },
+            "bounce": true,
+            "from": "kQClyqc82bVvuchsinNlgw1XCNfskqRrZksVYe2ViXcoT02O",
+            "to": "@treasure(creator)",
+            "type": "internal",
+            "value": "0.1",
+          },
+        ],
+      },
+    ],
+  },
+]
+`;
+
+exports[`contract should work for both 1`] = `
+[
+  {
+    "$seq": 1,
+    "events": [
+      {
+        "$type": "storage-charged",
+        "amount": "0.000000007",
+      },
+      {
+        "$type": "received",
+        "message": {
+          "body": {
+            "cell": "x{C1252ABEF0486F0DE6C9B680822D9CD2DDAADFF130BBE94B4A2D35889A308F9A91F197BA1710EA875C9D426AC451EB7656AA97E6847553183DACE2FB87DF4E52740A850D000000006660AD5A}
+ x{C002483CBCA53D072C89FB2BD8C2CC471AB55F00936FD9D7C95DA2471BB40C308640000000000000000000000000000000000000000000000000000000002FAF080000000000000000000000000000000000000000000000000000000000000000064_}
+  x{0000000048656C6C6F2043726561746F7221}",
+            "type": "cell",
+          },
+          "to": "kQCrSAId2aeTq3lGjXLuECibp2CbcX6BTAgquxlFWYGPaDvK",
+          "type": "external-in",
+        },
+      },
+      {
+        "$type": "processed",
+        "gasUsed": 11084n,
+      },
+      {
+        "$type": "sent",
+        "messages": [
+          {
+            "body": {
+              "text": "Hello Creator!",
+              "type": "text",
+            },
+            "bounce": true,
+            "from": "kQCrSAId2aeTq3lGjXLuECibp2CbcX6BTAgquxlFWYGPaDvK",
+            "to": "@treasure(creator)",
+            "type": "internal",
+            "value": "0.1",
+          },
+        ],
+      },
+    ],
+  },
+]
+`;
+
+exports[`contract should work for both addresses 1`] = `
+[
+  {
+    "$seq": 1,
+    "events": [
+      {
+        "$type": "storage-charged",
+        "amount": "0.000000007",
+      },
+      {
+        "$type": "received",
+        "message": {
+          "body": {
+            "cell": "x{C1252ABE8F46895F115777F050122D262FA75B01EE120D2DFA9D63AFE6DB803C4C047556A1B38E0C4751357BA8577322AEA476A0C4898725A6E113F9159CC830BF2AE20A0000000066613CCB}
+ x{C002483CBCA53D072C89FB2BD8C2CC471AB55F00936FD9D7C95DA2471BB40C308640000000000000000000000000000000000000000000000000000000002FAF080000000000000000000000000000000000000000000000000000000000000000064_}
+  x{0000000048656C6C6F2043726561746F7221}",
+            "type": "cell",
+          },
+          "to": "kQBNqiiP3k5fDf6Q0Psee8xL1PayaMwe_EicwsY6ki1xlxIY",
+          "type": "external-in",
+        },
+      },
+      {
+        "$type": "processed",
+        "gasUsed": 11084n,
+      },
+      {
+        "$type": "sent",
+        "messages": [
+          {
+            "body": {
+              "text": "Hello Creator!",
+              "type": "text",
+            },
+            "bounce": true,
+            "from": "kQBNqiiP3k5fDf6Q0Psee8xL1PayaMwe_EicwsY6ki1xlxIY",
+            "to": "@treasure(creator)",
+            "type": "internal",
+            "value": "0.1",
+          },
+        ],
+      },
+    ],
+  },
+]
+`;
